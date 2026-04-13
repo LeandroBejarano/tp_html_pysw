@@ -1,0 +1,167 @@
+.blog-page{
+    padding:4rem 2rem;
+}
+
+.blog-header{
+    text-align:center;
+    margin-bottom:3rem;
+}
+
+/* FILTROS */
+.blog-filters input{
+    display:none;
+}
+
+.filter-buttons{
+    display:flex;
+    gap:1rem;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:3rem;
+}
+
+.filter-buttons label{
+    padding:.8rem 1.5rem;
+    background:#eee;
+    border-radius:25px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.filter-buttons label:hover{
+    background:var(--primary);
+    color:white;
+}
+
+/* GRID NEWSPAPER */
+.blog-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:2rem;
+    margin-bottom:4rem;
+}
+
+.post{
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.post:first-child{
+    grid-row:span 2;
+}
+
+.post img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.post-content{
+    padding:1.5rem;
+}
+
+.post:hover{
+    transform:translateY(-8px);
+}
+
+/* TAGS */
+.tag{
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    padding:.3rem .8rem;
+    border-radius:20px;
+    font-size:.8rem;
+    margin-bottom:1rem;
+}
+
+/* FILTRO CSS ONLY */
+#aventura:checked ~ .blog-grid .post:not(.aventura){
+    display:none;
+}
+
+#cultura:checked ~ .blog-grid .post:not(.cultura){
+    display:none;
+}
+
+#gastronomia:checked ~ .blog-grid .post:not(.gastronomia){
+    display:none;
+}
+
+/* COMENTARIOS */
+.comentarios{
+    margin-top:4rem;
+}
+
+.comentario{
+    display:flex;
+    gap:1rem;
+    margin-bottom:1.5rem;
+    align-items:flex-start;
+}
+
+.avatar{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    position:relative;
+    flex-shrink:0;
+}
+
+.avatar::before{
+    content:"";
+    position:absolute;
+    width:22px;
+    height:22px;
+    background:white;
+    border-radius:50%;
+    top:10px;
+    left:19px;
+}
+
+.avatar::after{
+    content:"";
+    position:absolute;
+    width:30px;
+    height:18px;
+    background:white;
+    border-radius:20px 20px 10px 10px;
+    bottom:10px;
+    left:15px;
+}
+
+/* SCROLL REVEAL SIMULADO */
+.reveal{
+    animation:fadeUp .8s ease forwards;
+    opacity:0;
+}
+
+.reveal:nth-child(1){ animation-delay:.2s; }
+.reveal:nth-child(2){ animation-delay:.4s; }
+.reveal:nth-child(3){ animation-delay:.6s; }
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .blog-grid{
+        grid-template-columns:1fr;
+    }
+
+    .post:first-child{
+        grid-row:auto;
+    }
+}

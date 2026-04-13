@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos</title>
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/destinos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Turismo Jujuy</div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Destinos</a>
+
+                    <div class="mega-menu">
+                        <a href="destinos.html#cultural">Cultural</a>
+                        <a href="destinos.html#naturaleza">Naturaleza</a>
+                        <a href="destinos.html#playa">Sol y Playa</a>
+                        <a href="destinos.html#gastronomia">Gastronomía</a>
+                    </div>
+                </li>
+
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog de Destinos</a></li>
+            </ul>
+        </nav>
+
+        <button id="dark-toggle">🌙</button>
+    </header>
+
+    <main>
+
+        <!-- FILTROS -->
+        <section class="filtros">
+            <h1>Explorá Nuestros Destinos</h1>
+
+            <input type="radio" name="categoria" id="all" checked>
+            <input type="radio" name="categoria" id="cultural">
+            <input type="radio" name="categoria" id="naturaleza">
+            <input type="radio" name="categoria" id="gastronomico">
+
+            <div class="filter-buttons">
+                <label for="all">Todos</label>
+                <label for="cultural">Cultural</label>
+                <label for="naturaleza">Naturaleza</label>
+                <label for="gastronomico">Gastronómico</label>
+            </div>
+
+
+            <!-- GALERÍA -->
+            <div class="galeria">
+
+                <article class="destino cultural">
+                    <img src="../resources/images/placeholder.png" alt="">
+                    <div class="overlay">
+                        <h3>Humahuaca</h3>
+                        <p>Historia y cultura del norte.</p>
+                    </div>
+                </article>
+
+                <article class="destino naturaleza">
+                    <img src="../resources/images/placeholder.png" alt="">
+                    <div class="overlay">
+                        <h3>Salinas Grandes</h3>
+                        <p>Paisaje natural único.</p>
+                    </div>
+                </article>
+
+                <article class="destino gastronomico">
+                    <img src="../resources/images/placeholder.png" alt="">
+                    <div class="overlay">
+                        <h3>Sabores Jujeños</h3>
+                        <p>La mejor gastronomía regional.</p>
+                    </div>
+                </article>
+
+                <article class="destino naturaleza">
+                    <img src="../resources/images/placeholder.png" alt="">
+                    <div class="overlay">
+                        <h3>Laguna de Pozuelos</h3>
+                        <p>Reserva natural protegida.</p>
+                    </div>
+                </article>
+
+                <article class="destino cultural">
+                    <img src="../resources/images/placeholder.png" alt="">
+                    <div class="overlay">
+                        <h3>Pucará de Tilcara</h3>
+                        <p>Patrimonio arqueológico.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- TABLA RESPONSIVE -->
+        <section class="tabla-precios">
+            <h2>Precios Referenciales</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Categoría</th>
+                            <th>Precio Desde</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Humahuaca</td>
+                            <td>Cultural</td>
+                            <td>$25.000</td>
+                        </tr>
+                        <tr>
+                            <td>Salinas Grandes</td>
+                            <td>Naturaleza</td>
+                            <td>$35.000</td>
+                        </tr>
+                        <tr>
+                            <td>Pucará de Tilcara</td>
+                            <td>Cultural</td>
+                            <td>$20.000</td>
+                        </tr>
+                        <tr>
+                            <td>Laguna de Pozuelos</td>
+                            <td>Naturaleza</td>
+                            <td>$40.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="newsletter">
+            <h3>Suscribite al Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Tu email" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+
+        <div class="social">
+            <h3>Seguinos</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <div class="map">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy">
+            </iframe>
+        </div>
+
+    </footer>
+
+
+    <script src="../styles/darkmode.js"></script>
+</body>
+
+</html>

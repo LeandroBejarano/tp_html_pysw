@@ -1,0 +1,126 @@
+/* FILTROS */
+.filtros{
+    padding:4rem 2rem;
+    text-align:center;
+}
+
+.filtros input{
+    display:none;
+}
+
+.filter-buttons{
+    margin:2rem 0;
+    display:flex;
+    gap:1rem;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.filter-buttons label{
+    padding:.8rem 1.5rem;
+    background:var(--card-bg);
+    color:var(--text-color);
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.filter-buttons label:hover{
+    background:var(--primary);
+    color:white;
+}
+
+/* GALERÍA MASONRY */
+.galeria{
+    columns:3 250px;
+    gap:1rem;
+}
+
+.destino{
+    position:relative;
+    margin-bottom:1rem;
+    overflow:hidden;
+    border-radius:14px;
+    break-inside:avoid;
+}
+
+.destino img{
+    width:100%;
+    display:block;
+    transition:.4s;
+}
+
+.destino:hover img{
+    transform:scale(1.1);
+}
+
+/* OVERLAY */
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    transition:.3s;
+    padding:1rem;
+}
+
+.destino:hover .overlay{
+    opacity:1;
+}
+
+/* FILTROS CSS ONLY */
+#cultural:checked ~ .galeria .destino:not(.cultural){
+    display:none;
+}
+
+#naturaleza:checked ~ .galeria .destino:not(.naturaleza){
+    display:none;
+}
+
+#gastronomico:checked ~ .galeria .destino:not(.gastronomico){
+    display:none;
+}
+
+/* TABLA */
+.tabla-precios{
+    padding:4rem 2rem;
+}
+
+.table-wrapper{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:500px;
+}
+
+th, td{
+    padding:1rem;
+    border:1px solid var(--border-color);
+    text-align:left;
+    color:var(--text-color);
+}
+
+tr:hover{
+    background:var(--surface-color);
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+    .galeria{
+        columns:2 200px;
+    }
+}
+
+@media (max-width:500px){
+    .galeria{
+        columns:1;
+    }
+}

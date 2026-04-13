@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Destinos</title>
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/blog.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Turismo Jujuy</div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Destinos</a>
+
+                    <div class="mega-menu">
+                        <a href="destinos.html#cultural">Cultural</a>
+                        <a href="destinos.html#naturaleza">Naturaleza</a>
+                        <a href="destinos.html#playa">Sol y Playa</a>
+                        <a href="destinos.html#gastronomia">Gastronomía</a>
+                    </div>
+                </li>
+
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog de Destinos</a></li>
+            </ul>
+        </nav>
+
+        <button id="dark-toggle">🌙</button>
+    </header>
+
+    <main class="blog-page">
+
+        <section class="blog-header">
+            <h1>Blog de Viajes</h1>
+            <p>Inspirate con nuestras historias y recomendaciones</p>
+        </section>
+
+        <!-- FILTROS -->
+        <section class="blog-filters">
+
+            <input type="radio" name="blog-filter" id="all" checked>
+            <input type="radio" name="blog-filter" id="aventura">
+            <input type="radio" name="blog-filter" id="cultura">
+            <input type="radio" name="blog-filter" id="gastronomia">
+
+            <div class="filter-buttons">
+                <label for="all">Todos</label>
+                <label for="aventura">Aventura</label>
+                <label for="cultura">Cultura</label>
+                <label for="gastronomia">Gastronomía</label>
+            </div>
+
+        </section>
+
+        <!-- GRID ESTILO REVISTA -->
+        <section class="blog-grid">
+
+            <article class="post aventura reveal">
+                <img src="resources/img/blog1.jpg" alt="">
+                <div class="post-content">
+                    <span class="tag">Aventura</span>
+                    <h2>Trekking por la Quebrada</h2>
+                    <p>Viví una experiencia única recorriendo senderos increíbles...</p>
+                </div>
+            </article>
+
+            <article class="post cultura reveal">
+                <img src="assets/img/blog2.jpg" alt="">
+                <div class="post-content">
+                    <span class="tag">Cultura</span>
+                    <h2>Historia de Humahuaca</h2>
+                    <p>Conocé el patrimonio histórico del norte argentino...</p>
+                </div>
+            </article>
+
+            <article class="post gastronomia reveal">
+                <img src="assets/img/blog3.jpg" alt="">
+                <div class="post-content">
+                    <span class="tag">Gastronomía</span>
+                    <h2>Sabores Regionales</h2>
+                    <p>Los platos típicos que no podés dejar de probar...</p>
+                </div>
+            </article>
+
+        </section>
+
+
+        <!-- COMENTARIOS -->
+        <section class="comentarios">
+            <h2>Comentarios de Viajeros</h2>
+
+            <div class="comentario">
+                <div class="avatar"></div>
+                <div class="texto">
+                    <h4>María</h4>
+                    <p>Excelente contenido, me ayudó a planificar mi viaje.</p>
+                </div>
+            </div>
+
+            <div class="comentario">
+                <div class="avatar"></div>
+                <div class="texto">
+                    <h4>Lucas</h4>
+                    <p>Muy buenas recomendaciones gastronómicas.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="newsletter">
+            <h3>Suscribite al Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Tu email" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+
+        <div class="social">
+            <h3>Seguinos</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <div class="map">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy">
+            </iframe>
+        </div>
+
+    </footer>
+
+
+    <script src="../styles/darkmode.js"></script>
+
+</body>
+
+</html>

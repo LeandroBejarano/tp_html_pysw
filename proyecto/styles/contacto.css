@@ -1,0 +1,131 @@
+.contact-page{
+    padding:4rem 2rem;
+    display:flex;
+    justify-content:center;
+}
+
+.contact-container{
+    width:100%;
+    max-width:900px;
+}
+
+.contact-container h1{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+/* FORM LAYOUT */
+.contact-form{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1.5rem;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group.full{
+    grid-column:1 / -1;
+}
+
+label{
+    margin-bottom:.5rem;
+}
+
+input,
+textarea{
+    padding:1rem;
+    border:2px solid #ddd;
+    border-radius:10px;
+    font-size:1rem;
+    transition:.3s;
+}
+
+/* VALIDACIONES */
+input:valid,
+textarea:valid{
+    border-color:green;
+}
+
+input:invalid,
+textarea:invalid{
+    border-color:red;
+}
+
+/* BOTÓN */
+.submit-btn{
+    grid-column:1 / -1;
+    padding:1rem;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:1rem;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    transform:scale(1.03);
+}
+
+/* SPINNER */
+.spinner{
+    display:none;
+    grid-column:1 / -1;
+    margin:auto;
+
+    width:50px;
+    height:50px;
+    border:5px solid #ddd;
+    border-top:5px solid var(--primary);
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+/* MODAL */
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    padding:2rem;
+    border-radius:14px;
+    text-align:center;
+    width:90%;
+    max-width:400px;
+}
+
+.modal-content button{
+    margin-top:1rem;
+    padding:.8rem 1.5rem;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+/* ANIMACIONES */
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .contact-form{
+        grid-template-columns:1fr;
+    }
+
+    .form-group.full{
+        grid-column:auto;
+    }
+}

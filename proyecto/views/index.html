@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Jujuy</title>
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Turismo Jujuy</div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Destinos</a>
+
+                    <div class="mega-menu">
+                        <a href="destinos.html#cultural">Cultural</a>
+                        <a href="destinos.html#naturaleza">Naturaleza</a>
+                        <a href="destinos.html#playa">Sol y Playa</a>
+                        <a href="destinos.html#gastronomia">Gastronomía</a>
+                    </div>
+                </li>
+
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog de Destinos</a></li>
+            </ul>
+        </nav>
+
+        <button id="dark-toggle">🌙</button>
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="assets/video/jujuy.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay">
+            <h1>Descubrí Jujuy</h1>
+            <p>Viví una aventura inolvidable en el norte argentino</p>
+            <a href="destinos.html" class="btn">Explorar Destinos</a>
+        </div>
+    </section>
+
+
+    <!-- DESTINOS DESTACADOS -->
+    <section class="destacados">
+        <h2>Destinos Destacados</h2>
+
+        <div class="cards-container">
+
+            <article class="card">
+                <img src="assets/img/purmamarca.jpg" alt="Purmamarca">
+                <div class="card-content">
+                    <h3>Purmamarca</h3>
+                    <p>Conocé el Cerro de los 7 Colores.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/img/humahuaca.jpg" alt="Humahuaca">
+                <div class="card-content">
+                    <h3>Humahuaca</h3>
+                    <p>Historia y cultura en cada rincón.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/img/salinas.jpg" alt="Salinas Grandes">
+                <div class="card-content">
+                    <h3>Salinas Grandes</h3>
+                    <p>Un paisaje único en el mundo.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- CONTADOR -->
+    <section class="contador-section">
+        <div class="counter-box">
+            <span class="counter">500+</span>
+            <p>Turistas satisfechos este mes</p>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios">
+        <h2>Lo que dicen nuestros viajeros</h2>
+
+        <div class="carousel">
+            <div class="slides">
+                <div class="testimonial">"Una experiencia mágica en Purmamarca."</div>
+                <div class="testimonial">"Paisajes increíbles y excelente atención."</div>
+                <div class="testimonial">"Definitivamente volvería otra vez."</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="newsletter">
+            <h3>Suscribite al Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Tu email" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+
+        <div class="social">
+            <h3>Seguinos</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <div class="map">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy">
+            </iframe>
+        </div>
+
+    </footer>
+
+
+    <script src="../styles/darkmode.js"></script>
+
+</body>
+
+</html>

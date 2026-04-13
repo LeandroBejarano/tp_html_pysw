@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+
+    <link rel="stylesheet" href="../styles/precios.css">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Turismo Jujuy</div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Destinos</a>
+
+                    <div class="mega-menu">
+                        <a href="destinos.html#cultural">Cultural</a>
+                        <a href="destinos.html#naturaleza">Naturaleza</a>
+                        <a href="destinos.html#playa">Sol y Playa</a>
+                        <a href="destinos.html#gastronomia">Gastronomía</a>
+                    </div>
+                </li>
+
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog de Destinos</a></li>
+            </ul>
+        </nav>
+
+        <button id="dark-toggle">🌙</button>
+    </header>
+
+    <main class="precios-page">
+
+        <section class="pricing-hero">
+            <h1>Compará Nuestros Paquetes</h1>
+            <p>Elegí la mejor experiencia para tu viaje</p>
+        </section>
+
+        <section class="pricing-table-section">
+            <div class="table-wrapper">
+                <table class="pricing-table">
+
+                    <thead>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Plan Básico</th>
+                            <th>Plan Premium</th>
+                            <th>Plan VIP</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Humahuaca</td>
+
+                            <td>
+                                $25.000
+                                <span class="tooltip">
+                                    ?
+                                    <span class="tooltip-text">
+                                        Incluye transporte ida/vuelta
+                                    </span>
+                                </span>
+                            </td>
+
+                            <td>
+                                $40.000
+                                <span class="tooltip">
+                                    ?
+                                    <span class="tooltip-text">
+                                        Transporte + Guía + Almuerzo
+                                    </span>
+                                </span>
+                            </td>
+
+                            <td class="featured">
+                                $60.000
+                                <span class="badge">Popular</span>
+                                <span class="tooltip">
+                                    ?
+                                    <span class="tooltip-text">
+                                        Todo incluido + Atención VIP
+                                    </span>
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Salinas Grandes</td>
+                            <td>$35.000</td>
+                            <td>$50.000</td>
+                            <td class="featured">$75.000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Purmamarca</td>
+                            <td>$20.000</td>
+                            <td>$32.000</td>
+                            <td class="featured">$48.000</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="newsletter">
+            <h3>Suscribite al Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Tu email" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+
+        <div class="social">
+            <h3>Seguinos</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <div class="map">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy">
+            </iframe>
+        </div>
+
+    </footer>
+
+
+    <script src="../styles/darkmode.js"></script>
+
+</body>
+
+</html>

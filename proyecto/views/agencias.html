@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencias</title>
+
+    <link rel="stylesheet" href="../styles/agencias.css">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Turismo Jujuy</div>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Destinos</a>
+
+                    <div class="mega-menu">
+                        <a href="destinos.html#cultural">Cultural</a>
+                        <a href="destinos.html#naturaleza">Naturaleza</a>
+                        <a href="destinos.html#playa">Sol y Playa</a>
+                        <a href="destinos.html#gastronomia">Gastronomía</a>
+                    </div>
+                </li>
+
+                <li><a href="agencias.html">Agencias</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="blog.html">Blog de Destinos</a></li>
+            </ul>
+        </nav>
+
+        <button id="dark-toggle">🌙</button>
+    </header>
+
+    <main class="agencias-page">
+
+        <section class="agencias-hero">
+            <h1>Nuestras Agencias Asociadas</h1>
+            <p>Conocé a nuestros partners oficiales</p>
+        </section>
+
+        <section class="agencias-grid">
+
+            <!-- Agencia 1 -->
+            <article class="flip-card">
+                <div class="flip-inner">
+
+                    <div class="flip-front">
+                        <img src="assets/img/agencia1.jpg" alt="Agencia Norte Travel">
+                        <h3>Norte Travel</h3>
+                    </div>
+
+                    <div class="flip-back">
+                        <h3>Norte Travel</h3>
+                        <p>Especialistas en turismo de aventura.</p>
+                        <p>+15 años de experiencia.</p>
+
+                        <div class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- Agencia 2 -->
+            <article class="flip-card">
+                <div class="flip-inner">
+
+                    <div class="flip-front">
+                        <img src="assets/img/agencia2.jpg" alt="Agencia Quebrada Tours">
+                        <h3>Quebrada Tours</h3>
+                    </div>
+
+                    <div class="flip-back">
+                        <h3>Quebrada Tours</h3>
+                        <p>Recorridos culturales premium.</p>
+                        <p>Guías certificados.</p>
+
+                        <div class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- Agencia 3 -->
+            <article class="flip-card">
+                <div class="flip-inner">
+
+                    <div class="flip-front">
+                        <img src="assets/img/agencia3.jpg" alt="Agencia Altura Experience">
+                        <h3>Altura Experience</h3>
+                    </div>
+
+                    <div class="flip-back">
+                        <h3>Altura Experience</h3>
+                        <p>Excursiones de montaña y trekking.</p>
+                        <p>Paquetes personalizados.</p>
+
+                        <div class="rating">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="newsletter">
+            <h3>Suscribite al Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Tu email" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+
+        <div class="social">
+            <h3>Seguinos</h3>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+
+        <div class="map">
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy">
+            </iframe>
+        </div>
+
+    </footer>
+
+
+    <script src="../styles/darkmode.js"></script>
+
+</body>
+
+</html>

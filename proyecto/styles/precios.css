@@ -1,0 +1,95 @@
+.precios-page{
+    padding:4rem 2rem;
+}
+
+.pricing-hero{
+    text-align:center;
+    margin-bottom:3rem;
+}
+
+/* TABLA */
+.table-wrapper{
+    overflow-x:auto;
+}
+
+.pricing-table{
+    width:100%;
+    min-width:700px;
+    border-collapse:collapse;
+    text-align:center;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.pricing-table th{
+    background:var(--primary);
+    color:white;
+    padding:1rem;
+}
+
+.pricing-table td{
+    padding:1.5rem 1rem;
+    border:1px solid #eee;
+    position:relative;
+    transition:.3s;
+}
+
+/* HOVER FILAS */
+.pricing-table tbody tr:hover td{
+    background:#f5f9ff;
+}
+
+/* DESTACADO */
+.featured{
+    background:rgba(13,110,253,.08);
+    font-weight:bold;
+}
+
+/* BADGE */
+.badge{
+    display:inline-block;
+    margin-left:.5rem;
+    background:gold;
+    color:#333;
+    font-size:.75rem;
+    padding:.2rem .5rem;
+    border-radius:20px;
+}
+
+/* TOOLTIP */
+.tooltip{
+    position:relative;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin-left:.5rem;
+
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:var(--primary);
+    color:white;
+    font-size:.75rem;
+    cursor:pointer;
+}
+
+.tooltip-text{
+    position:absolute;
+    bottom:130%;
+    left:50%;
+    transform:translateX(-50%);
+    background:#111;
+    color:white;
+    padding:.6rem .8rem;
+    border-radius:8px;
+    font-size:.8rem;
+    white-space:nowrap;
+    opacity:0;
+    pointer-events:none;
+    transition:.3s;
+}
+
+.tooltip:hover .tooltip-text{
+    opacity:1;
+}
