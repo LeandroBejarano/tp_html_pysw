@@ -37,7 +37,8 @@
 
 /* HOVER FILAS */
 .pricing-table tbody tr:hover td{
-    background:#f5f9ff;
+    background:var(--card-bg);
+    color:var(--text-color);
 }
 
 /* DESTACADO */
