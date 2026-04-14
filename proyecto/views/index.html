@@ -11,8 +11,7 @@
 </head>
 
 <body>
-
-    <!-- HEADER -->
+  <!-- HEADER -->
     <header class="header">
         <div class="logo">Turismo Jujuy</div>
 
@@ -41,11 +40,11 @@
         <button id="dark-toggle">🌙</button>
     </header>
 
-
-    <!-- HERO -->
+<!-- HERO -->
     <section class="hero">
-        <video autoplay muted loop>
-            <source src="assets/video/jujuy.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline poster="../resources/images/placeholder.png" class="hero-video">
+            <source src="../resources/images/VideoJujuy.mp4.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
         </video>
 
         <div class="hero-overlay">
@@ -55,15 +54,14 @@
         </div>
     </section>
 
-
-    <!-- DESTINOS DESTACADOS -->
+  <!-- DESTINOS DESTACADOS -->
     <section class="destacados">
         <h2>Destinos Destacados</h2>
 
         <div class="cards-container">
 
             <article class="card">
-                <img src="assets/img/purmamarca.jpg" alt="Purmamarca">
+                <img src="../resources/images/quebrada_de_humahuaca-purmamarca.jpg" alt="Purmamarca">
                 <div class="card-content">
                     <h3>Purmamarca</h3>
                     <p>Conocé el Cerro de los 7 Colores.</p>
@@ -71,15 +69,15 @@
             </article>
 
             <article class="card">
-                <img src="assets/img/humahuaca.jpg" alt="Humahuaca">
+                <img src="../resources/images/Pucara tilcara.jpg" alt="Humahuaca">
                 <div class="card-content">
-                    <h3>Humahuaca</h3>
+                    <h3>Pucará de Tilcara</h3>
                     <p>Historia y cultura en cada rincón.</p>
                 </div>
             </article>
 
             <article class="card">
-                <img src="assets/img/salinas.jpg" alt="Salinas Grandes">
+                <img src="../resources/images/Salinasgrandes.jpg" alt="Salinas Grandes">
                 <div class="card-content">
                     <h3>Salinas Grandes</h3>
                     <p>Un paisaje único en el mundo.</p>
@@ -88,16 +86,38 @@
 
         </div>
     </section>
-
-
-    <!-- CONTADOR -->
+    <!-- TABLA -->
+<section class="precios-referenciales">
+        <h2 style="text-align: center; margin-top: 2rem;">Tarifas de Excursiones</h2>
+        <table style="width: 100%; border-collapse: collapse; margin: 1rem auto; max-width: 1000px;">
+            <thead>
+                <tr style="background-color: #007bff; color: white;">
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Destino</th>
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Servicio</th>
+                    <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 12px;">Purmamarca</td>
+                    <td style="border: 1px solid #ddd; padding: 12px;">Guía bilingüe</td>
+                    <td style="border: 1px solid #ddd; padding: 12px;">$15.000</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 12px;">Salinas Grandes</td>
+                    <td style="border: 1px solid #ddd; padding: 12px;">Traslado + Picnic</td>
+                    <td style="border: 1px solid #ddd; padding: 12px;">$25.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+  <!-- CONTADOR -->
     <section class="contador-section">
         <div class="counter-box">
             <span class="counter">500+</span>
             <p>Turistas satisfechos este mes</p>
         </div>
     </section>
-
 
     <!-- TESTIMONIOS -->
     <section class="testimonios">
@@ -112,8 +132,7 @@
         </div>
     </section>
 
-
-    <!-- FOOTER -->
+<!-- FOOTER -->
     <footer class="footer">
 
         <div class="newsletter">
@@ -133,8 +152,7 @@
 
         <div class="map">
             <h3>Ubicación</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18..." loading="lazy">
-            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14559.728864700057!2d-65.3087289!3d-24.1784967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x940d021665a5893d%3A0x627d3c01c107452d!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1713000000000!5m2!1ses!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
     </footer>
