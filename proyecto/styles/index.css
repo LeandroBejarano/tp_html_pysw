@@ -1,4 +1,18 @@
-/* HERO */
+/* <------ VARIABLES Y GLOBALES ------> */
+:root {
+    --primary: #007bff;
+    --radius: 12px;
+    --transition: 0.3s ease;
+}
+
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* <------ HERO CON VIDEO ------> */
 .hero {
     position: relative;
     height: 100vh;
@@ -26,6 +40,7 @@
 
 .hero-overlay h1 {
     font-size: 4rem;
+    margin: 0;
 }
 
 .btn {
@@ -34,63 +49,120 @@
     color: white;
     padding: 1rem 2rem;
     border-radius: var(--radius);
+    text-decoration: none;
     transition: var(--transition);
+    display: inline-block;
 }
 
 .btn:hover {
     transform: scale(1.05);
+    background: #0056b3;
 }
 
-/* DESTACADOS */
+/* <------ DESTACADOS (CARDS) ------> */
 .destacados {
     padding: 4rem 2rem;
+    text-align: center;
+}
+
+.destacados h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
 }
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .card {
+    background: white;
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
-    transition: var(--transition);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
     transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .card:hover img {
     transform: scale(1.1);
 }
 
-.card:hover {
-    transform: translateY(-10px);
-}
-
 .card-content {
-    padding: 1rem;
+    padding: 1.5rem;
+    text-align: left;
 }
 
-/* CONTADOR */
+.card-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: #111;
+}
+
+.card-content p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* <------ CONTADOR ------> */
 .contador-section {
     background: var(--primary);
     color: white;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem; /* Ajustado para que no sea gigante */
 }
 
 .counter {
     font-size: 4rem;
     font-weight: bold;
+    display: block;
     animation: pulse 2s infinite;
 }
 
-/* TESTIMONIOS */
+/* <------ TABLA DE PRECIOS ------> */
+.precios-referenciales {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary);
+    color: white;
+    text-transform: uppercase;
+}
+
+/* <------ TESTIMONIOS (CAROUSEL) ------> */
 .testimonios {
     padding: 4rem 2rem;
     text-align: center;
@@ -117,50 +189,62 @@
     font-size: 1.2rem;
 }
 
+/* <------ MODO OSCURO (ESTADOS) ------> */
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
 
-/* ANIMACIONES */
+body.dark-mode .header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .destacados h2 {
+    color: white;
+}
+
+body.dark-mode .card {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+}
+
+body.dark-mode .card-content h3, 
+body.dark-mode .card-content p {
+    color: white;
+}
+
+body.dark-mode table {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body.dark-mode th {
+    background-color: #333;
+}
+
+/* <------ ANIMACIONES ------> */
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes pulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.1);
-    }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 @keyframes slide {
-
-    0%,
-    25% {
-        transform: translateX(0);
-    }
-
-    33%,
-    58% {
-        transform: translateX(-100%);
-    }
-
-    66%,
-    91% {
-        transform: translateX(-200%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+    0%, 25% { transform: translateX(0); }
+    33%, 58% { transform: translateX(-100%); }
+    66%, 91% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
 }
+/* Estilos de la tabla */
+table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+th { background-color: #007bff; color: white; }
+
+/* Colores para cuando apretás el botón */
+body.dark-mode { background-color: #121212 !important; color: white !important; }
+body.dark-mode table { background-color: #1f1f1f; color: white; }
+body.dark-mode th { background-color: #333; }

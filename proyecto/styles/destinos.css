@@ -91,6 +91,10 @@
     padding:4rem 2rem;
 }
 
+.tabla-precios h2{
+    color:var(--text-color);
+}
+
 .table-wrapper{
     overflow-x:auto;
 }

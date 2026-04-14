@@ -43,7 +43,8 @@
 
 /* FRONT */
 .flip-front{
-    background:white;
+    background:var(--card-bg);
+    color:var(--text-color);
 }
 
 .flip-front img{
