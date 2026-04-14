@@ -105,9 +105,16 @@
 }
 
 .dark-mode{
-    --light:#121212;
-    --dark:#ffffff;
-    --text:#eee;
+    --bg-color:#121212;
+    --surface-color:#1e1e1e;
+    --text-color:#f5f5f5;
+    --text-muted:#cccccc;
+
+    --footer-bg:#0a0a0a;
+    --footer-text:#ffffff;
+
+    --card-bg:#1f1f1f;
+    --border-color:#333333;
 }
 
 #dark-toggle{
@@ -170,8 +177,8 @@
 
 body{
     font-family:Arial, sans-serif;
-    background:var(--light);
-    color:var(--text);
+    background:var(--bg-color);
+    color:var(--text-color);
     line-height:1.6;
 }
 
