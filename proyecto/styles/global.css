@@ -199,3 +199,32 @@ button{
 html{
     scroll-behavior:smooth;
 }
+
+@media (max-width: 900px){
+    .header{
+        flex-direction:column;
+        gap:1rem;
+        padding:1rem;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:1rem;
+    }
+
+    .mega-menu{
+        position:static;
+        opacity:1;
+        visibility:visible;
+        transform:none;
+        box-shadow:none;
+        background:transparent;
+        min-width:auto;
+        display:none;
+    }
+
+    .dropdown:hover .mega-menu{
+        display:flex;
+    }
+}
